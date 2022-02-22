@@ -1,0 +1,1 @@
+This repo contains simple scripts to test the install of RAPIDS in a conda environment.
