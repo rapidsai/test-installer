@@ -1,0 +1,17 @@
+INSTALLER:
+ - conda
+ - mamba
+
+RAPIDS_VER:
+  - '22.02'
+  - '22.04'
+
+RAPIDS_CONDA_CHANNEL:
+  - rapidsai
+  - rapidsai-nightly
+
+excludes:
+  - RAPIDS_VER: '22.02'
+    CONDA_CHANNEL: rapidsai-nightly
+  - RAPIDS_VER: '22.04'
+    CONDA_CHANNEL: rapidsai
