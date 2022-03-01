@@ -4,6 +4,8 @@ set -e
 export PATH=/opt/conda/bin:/usr/local/cuda/bin:$PATH
 . /opt/conda/etc/profile.d/conda.sh
 
+conda config --set ssl_verify False
+
 conda install -y -c gpuci gpuci-tools || conda install -y -c gpuci gpuci-tools
 
 if [[ "$INSTALLER" == "mamba" ]]; then
