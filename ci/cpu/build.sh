@@ -2,6 +2,8 @@
 set -e
 
 export PATH=/opt/conda/bin:/usr/local/cuda/bin:$PATH
+export HOME="$WORKSPACE"
+
 . /opt/conda/etc/profile.d/conda.sh
 
 conda config --set ssl_verify False
