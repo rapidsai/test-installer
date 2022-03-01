@@ -21,7 +21,7 @@ gpuci_logger "Install rapids"
 
 if [[ "$INSTALLER" == "conda" ]]; then
     gpuci_conda_retry create -n test $CHANNELS rapids=$RAPIDS_VER cudatoolkit=11.5 dask-sql
-elif [[ "$INSTALLER" == "mamba "]]; then
+elif [[ "$INSTALLER" == "mamba" ]]; then
     gpuci_mamba_retry create -n test $CHANNELS rapids=$RAPIDS_VER cudatoolkit=11.5 dask-sql
 else
     gpuci_logger "Unknown INSTALLER"
