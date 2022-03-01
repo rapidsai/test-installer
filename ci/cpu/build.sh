@@ -27,7 +27,3 @@ else
     gpuci_logger "Unknown INSTALLER"
     exit 1
 fi
-
-gpuci_logger "Activiate test environment"
-conda activate test
-python -c 'import cudf'
